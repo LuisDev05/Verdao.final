@@ -503,7 +503,7 @@ details[open] div {
   display: flex;
   width: 1000px;
   height: 500px;
-  margin-top: 100px;
+  margin-top: 60px;
   background-position: center;
   background-size: cover;
   align-items: center;
@@ -608,6 +608,25 @@ details[open] div {
 
 #radio4:checked~.navegador-auto .btn-auto4 {
   background-color: black;
+}
+
+@media(max-width:768px){ 
+  .carrossel{
+    margin-bottom:-150px ;
+  }
+  .slaid{
+    margin-top: 40px;
+  }
+  .slide1 img{
+    width: 390px;
+    height: 380px;
+  }
+  .slaid img{
+    width: 390px;
+    height: 380px;
+  }
+  .produtos{
+  }
 }
 
 
@@ -3307,6 +3326,11 @@ video {
   display: flex;
   justify-content: center;
   padding: 10%;
+  transition: 0.3s ease-in-out;
+}
+
+.circulo:hover{
+  transform: scale(1.1)translateY(-10px);
 }
 
 .text-limeGreen {
